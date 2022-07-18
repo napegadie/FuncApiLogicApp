@@ -23,7 +23,7 @@ namespace FuncBookApi
         List<Book> _lst = new List<Book>();
 
             // Get the connection string from app settings and use it to create a connection.
-            var str = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_SQLConnectionString");
+            var str = Environment.GetEnvironmentVariable("sqldb_connection");
 
             using (SqlConnection conn = new SqlConnection(str))
             {
