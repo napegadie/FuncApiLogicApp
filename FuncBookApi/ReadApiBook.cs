@@ -24,7 +24,7 @@ namespace FuncBookApi
 
             // Get the connection string from app settings and use it to create a connection.
             //var str = Environment.GetEnvironmentVariable("ConnectionStrings:sqldb_connection");
-            var str = Environment.GetEnvironmentVariable("sqldb_connection");
+            var str = Environment.GetEnvironmentVariable("SQLAZURECONNSTR_SQLConnectionString");
 
             using (SqlConnection conn = new SqlConnection(str))
             {
